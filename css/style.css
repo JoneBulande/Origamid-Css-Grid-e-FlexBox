@@ -1,0 +1,60 @@
+body, ul, li, p{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	font-style: 1.2em;
+	font-family: sans-serif;
+}
+body{margin-bottom: 100px;}
+a{
+	color: #fff;
+	text-decoration: none
+}
+h1{
+	
+	text-align: center;
+}
+img{
+	max-width: 100%;
+	display: block;
+}
+
+/*| HEADER |*/
+
+.header{
+	display: flex;
+	padding: 20px;
+	flex-wrap: wrap;
+	align-items: center;
+	background-color: #1d1e20;
+	justify-content: space-between;
+}
+.menu{
+	display: flex;
+	flex-wrap: wrap;
+}
+.menu li{
+	margin-left: 10px;
+}
+.menu li:first-child{
+	margin-left: 0;
+}
+.menu li a{
+	padding: 10px;
+	display: block;
+
+}
+
+/* CSS FLEXBOX */
+.flex{
+	display: flex;
+	padding: 10px;
+	margin: 0 auto;
+	flex-wrap: wrap;
+	max-width: 800px;
+}
+.flex > div{
+	margin: 10px;
+	flex: 1 1 200px;
+}
+
