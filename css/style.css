@@ -58,11 +58,13 @@ img{
 	flex: 1 1 200px;
 }
 
-/* GRID */
+/* CSS GRID 1 */
 .grid1{
 	padding: 20px;
 	display: grid;
 	grid-gap: 20px;
+	max-width: 800px;
+	margin: 0 auto;
 	grid-template-columns: repeat(3, 1fr);
 }
 .grid1 div:nth-child(n + 4){
@@ -88,5 +90,33 @@ img{
 		order: -1;
 		grid-row: auto;
 		grid-column: auto;
+	}
+}
+
+/* CSS GRID 2 */
+
+.grid2{
+	padding: 10px;
+	display: grid;
+	grid-gap: 20px;
+	margin: 0 auto;
+	max-width: 800px;
+	grid-template-columns: 1fr 200px; 
+}
+.sidebar > div{
+	margin-bottom: 10px;
+}
+
+@media (max-width: 600px){
+	.grid2{
+		grid-template-columns: 1fr; 
+	}
+	.sidebar{
+		display: flex;
+		overflow: scroll;
+	}
+	.sidebar > div{
+		margin: 0 10px;
+		flex: 1 0 200px;
 	}
 }
